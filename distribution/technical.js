@@ -9,7 +9,7 @@ let tableContent = [
 
     {
         case: 2,
-        imageSrc: 'source is displayable',
+        imageSrc: 'img/1_pUEZd8z__1p-7ICIO1NZFA.png',
         errorName: 'non typical error',
         errorDescription: 'this is an uncommon error'
 
@@ -17,7 +17,7 @@ let tableContent = [
 
     {
         case: 3,
-        imageSrc: 'source is displayable',
+        imageSrc: 'img/1_pUEZd8z__1p-7ICIO1NZFA.png',
         errorName: 'general error',
         errorDescription: 'this is a general error'
 
@@ -37,11 +37,15 @@ const techIssue = () => {
         
       
      
-        <tr class = 'row'>
-        <th class = 'col-3' scope = 'row'>${presentError.case}</th>
+        <tr class = 'row ml-0 mr-0 pl-0 pr-0'>
+        <th class = 'col-1' scope = 'row'>${presentError.case}</th>
         <td class = 'col-3'> <img src = '${presentError.imageSrc}' class = 'img img-responsive img-thumbnail w-25' ></td>
         <td class = 'col-3'> ${presentError.errorName}</td>
         <td class = 'col-3' > ${presentError.errorDescription}</td>  
+        <td class = 'col-2 mx-auto' >   
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"></button>
+        
+
         </tr>
        
 
