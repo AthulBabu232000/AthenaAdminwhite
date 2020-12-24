@@ -37,11 +37,11 @@ const techIssue = () => {
         
       
      
-        <tr>
-        <th scope = 'row'>${presentError.case}</th>
-        <td > <img src = '${presentError.imageSrc}' class = 'img img-responsive img-thumbnail w-25' ></td>
-        <td > ${presentError.errorName}</td>
-        <td > ${presentError.errorDescription}</td>  
+        <tr class = 'row'>
+        <th class = 'col-3' scope = 'row'>${presentError.case}</th>
+        <td class = 'col-3'> <img src = '${presentError.imageSrc}' class = 'img img-responsive img-thumbnail w-25' ></td>
+        <td class = 'col-3'> ${presentError.errorName}</td>
+        <td class = 'col-3' > ${presentError.errorDescription}</td>  
         </tr>
        
 
