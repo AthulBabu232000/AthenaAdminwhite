@@ -29,13 +29,23 @@ let tableContent = [
 
 const techIssue = () => {
 
+    var tableElements = document.querySelector('.table').innerHTML;
+
     errorList = tableContent.reduce((errors, presentError) => {
 
-        errors += ` <tr>
-                  <th scope="row">${presentError.case}</th>
-                  <td><img src = '${presentError.imageSrc} ></td>
-                  <td>${presentError.errorName}</td>
-                  <td>${presentError.errorDescription}</td>    </tr>       
+        errors += `
+        
+      
+     
+        <tr>
+        <th scope="row">${presentError.case}</th>
+        <td><img src = '${presentError.imageSrc}' class = 'img img-responsive img-thumbnail w-25' ></td>
+        <td>${presentError.errorName}</td>
+        <td>${presentError.errorDescription}</td>  
+        </tr>
+       
+
+  
      `;
 
         return errors;
@@ -44,7 +54,7 @@ const techIssue = () => {
     }, '');
 
     errorElement = document.getElementById('technical-head');
-    errorElement.innerHTML = errorList;
+    errorElement.innerHTML = tableElements + errorList;
 }
 
 techIssue();
